@@ -4,8 +4,8 @@ defmodule ApiElixir do
 		request("https://apitransporte.buenosaires.gob.ar/transito/v1/cortes?client_id=abbf905ff3d2490fbe7fa3f7a05c2e8b&client_secret=B9E5F51358344Ae5a338da50B9c250Ae")
 		|> body
                 |> parse_body_to_tuple
-                |> get_list_to_tuple
-                |> get_map_to_list
+#                |> get_list_to_tuple
+ #               |> get_map_to_list
                 |> create_message
                 |> show_message	
 	end
